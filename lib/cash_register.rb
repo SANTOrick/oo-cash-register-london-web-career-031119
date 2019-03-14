@@ -1,13 +1,13 @@
 class CashRegister
-attr_accessor :total, :basket, :discount
+attr_accessor :total, :basket, :discount, :lastitem
 attr_reader
 
 
-def initialize( discount = 0, total = 0, lastitem)
+def initialize( discount = 0, total = 0)
   @total = total
   @basket = []
   @discount = discount
-  @lastitem = lastitem
+  @lastitem = 0
 end
 
 def total
