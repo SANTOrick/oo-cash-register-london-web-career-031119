@@ -25,9 +25,10 @@ def add_item (title, price, quantity = 1)
 end
 
 def apply_discount
-  tot_not_disc = add_item(title, price)
-  tot_not_disc
-  @total
+  temp_tot = @total
+  temp_tot / 100
+  temp_tot * 20
+  @total -= temp_tot
 end
 
 def items
