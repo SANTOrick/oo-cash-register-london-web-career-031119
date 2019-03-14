@@ -24,7 +24,7 @@ def add_item (title, price, quantity = 1)
 
 end
 
-def apply_discount (title, price)
+def apply_discount
   tot_not_disc = add_item(title, price)
   tot_not_disc
   @total
