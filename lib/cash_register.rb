@@ -27,7 +27,7 @@ def apply_discount
   temp_tot = @total
   temp_tot / 100
   temp_tot * @discount
-  @total -= temp_tot
+  @total - temp_tot
   return @total
 end
 
