@@ -29,7 +29,7 @@ def apply_discount
   temp_tot = temp_tot / 100
   temp_tot = temp_tot   * @discount
   @total = @total - temp_tot
-  puts "After the discount, the total comes to $#{@total}"
+  return "After the discount, the total comes to $#{@total}"
 else
   binding.pry
   puts "There is no discount to apply."
