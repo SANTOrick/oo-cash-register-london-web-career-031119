@@ -19,7 +19,7 @@ def add_item (title, price, quantity = 1)
   real_price = price * quantity
   total_temp += real_price
   @total += total_temp
-  until quantity != do
+  until (i = quantity ; i --) do
     @basket.push title
     quantity - 1
   end
