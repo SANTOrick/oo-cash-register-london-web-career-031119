@@ -19,7 +19,7 @@ def add_item (title, price, quantity = 1)
   total_temp += real_price
   @total += total_temp
   quantity.times {@basket.push title}
-  return total_temp
+  return @total
 
 end
 
