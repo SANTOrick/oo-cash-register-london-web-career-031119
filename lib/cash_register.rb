@@ -31,6 +31,7 @@ def apply_discount
   @total = @total - temp_tot
   puts "After the discount, the total comes to $#{@total}"
 else
+  binding.pry
   puts "There is no discount to apply."
 end
 end
