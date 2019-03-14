@@ -29,6 +29,7 @@ def apply_discount
   temp_tot = temp_tot   * @discount
   @total = @total - temp_tot
   return @total
+  puts "After the discount, the total comes to $#{@total}"
 end
 
 def items
