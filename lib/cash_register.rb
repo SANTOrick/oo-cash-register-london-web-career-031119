@@ -3,10 +3,11 @@ attr_accessor :total, :basket, :discount
 attr_reader
 
 
-def initialize( discount = 0, total = 0)
+def initialize( discount = 0, total = 0, lastitem)
   @total = total
   @basket = []
   @discount = discount
+  @lastitem = lastitem
 end
 
 def total
@@ -14,6 +15,7 @@ def total
 end
 
 def add_item (title, price, quantity = 1)
+  @lastitem = price
   total_temp = 0
   real_price = price * quantity
   total_temp += real_price
@@ -36,6 +38,8 @@ end
 end
 
 def void_last_transaction
+  @lastitem
+  @lastprice
 
 end
 
