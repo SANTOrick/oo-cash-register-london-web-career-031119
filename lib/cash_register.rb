@@ -38,8 +38,7 @@ end
 end
 
 def void_last_transaction
-  @lastitem
-  @lastprice
+  @total = @total - @lastitem
 
 end
 
