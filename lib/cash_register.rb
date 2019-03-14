@@ -19,14 +19,14 @@ def add_item (title, price, quantity = 1)
   total_temp += real_price
   @total += total_temp
   quantity.times {@basket.push title}
-  return @total
+  return total_temp
 
 end
 
 def apply_discount
   temp_tot = @total
   temp_tot / 100
-  temp_tot * 20
+  temp_tot * @discount
   @total -= temp_tot
   return @total
 end
