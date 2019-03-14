@@ -35,6 +35,11 @@ else
 end
 end
 
+def void_last_transaction
+
+end
+
+
 def items
   return @basket
 
