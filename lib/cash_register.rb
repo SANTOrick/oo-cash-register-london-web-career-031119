@@ -29,6 +29,7 @@ def apply_discount
   temp_tot / 100
   temp_tot * 20
   @total -= temp_tot
+  return @ total
 end
 
 def items
