@@ -24,11 +24,14 @@ def add_item (title, price, quantity = 1)
 end
 
 def apply_discount
+  if @discount != 0
   temp_tot = @total
   temp_tot = temp_tot / 100
   temp_tot = temp_tot   * @discount
   @total = @total - temp_tot
   puts "After the discount, the total comes to $#{@total}"
+else
+  puts "There is no discount to apply."
 end
 
 def items
