@@ -33,6 +33,7 @@ def apply_discount
 else
   puts "There is no discount to apply."
 end
+end
 
 def items
   return @basket
