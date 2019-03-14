@@ -24,7 +24,7 @@ def add_item (title, price, quantity = 1)
 end
 
 def apply_discount
-  if @discount != 0
+  if (@discount != 0)
   temp_tot = @total
   temp_tot = temp_tot / 100
   temp_tot = temp_tot   * @discount
