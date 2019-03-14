@@ -1,13 +1,13 @@
 class CashRegister
 attr_accessor :total, :basket
 attr_reader
+attr_writer :discount
 
 
-
-def initialize(total = 0)
+def initialize(total = 0, discount = 0)
   @total = total
-  @basked = []
-
+  @basket = []
+  @discount = discount
 end
 
 def total
@@ -19,9 +19,9 @@ def add_item (title, price, quantity = 1)
   real_price = price * quantity
   total_temp += real_price
   @total += total_temp
-  until quantity == 0 do
-    @basket << title
-    quantity --
+  until quantity != do
+    @basket.push title
+    quantity - 1
   end
   return total_temp
 
